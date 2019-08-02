@@ -1,12 +1,21 @@
 {
   "name": "myproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a small Reactjs app",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^4.0.2",
+    "bootstrap": "^3.4.1",
+    "bootstrap-theme": "^5.0.0",
+    "browserify": "^16.3.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
-    "gulp-open": "^3.0.1"
+    "gulp-eslint": "^6.0.0",
+    "gulp-open": "^3.0.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.14.7",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^2.0.0"
   },
   "devDependencies": {},
   "scripts": {
