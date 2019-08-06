@@ -1,4 +1,5 @@
 "use strict"
+
 var React=require("react");
 var ReactDOM=require("react-dom");
 var CreateClass=require("create-react-class");
@@ -7,8 +8,9 @@ var Home = CreateClass({
     render: function(){
         return(
             <div className="jumbotron">
-                <h1>My Home Page</h1>
-                <h2>We'll adjust as we build the app</h2>
+                <h1>Welcome!</h1>
+                <h2>You,ll find some real classy dishes here!</h2>
+                <button type="button" className="btn btn-primary">See more »</button>
             </div>
         );
     }

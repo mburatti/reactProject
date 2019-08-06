@@ -17,7 +17,10 @@ var config = {
         dist: "./dist",
         js: "./src/**/*.js",
         indexJs: "./src/index.js",
-        css: "./node_modules/bootstrap/dist/css/bootstrap.css"
+        css: ["./node_modules/bootstrap/dist/css/bootstrap.css",
+            "./src/css/*.css"
+        ],
+        images: "./src/images/*.*"
     }
 }
 
@@ -53,7 +56,8 @@ gulp.task("js", function(){
 
 gulp.task("watch", function(){
     gulp.watch(config.paths.html, ["html"]);
-    gulp.watch(config.paths.js, ["js", "lint"]);
+    gulp.watch(config.paths.js, ["js"]);
+    gulp.watch(config.paths.html, ["images"]);
 });
 
 gulp.task("css", function(){
@@ -68,4 +72,13 @@ gulp.task("lint", function(){
     .pipe(lint.format());
 });
 
-gulp.task("default", ["html", "js", "css", "lint", "open", "watch"]);
+gulp.task("images", function(){
+    gulp.src(config.paths.images)
+    .pipe(gulp.dest(config.paths.dist + "/images"))
+    .pipe(conn.reload());
+
+    gulp.src(".src/favicon.ico")
+    .pipe(gulp.dest(config.paths.dist));
+});
+
+gulp.task("default", ["html", "images", "js", "css", "lint", "open", "watch"]);
