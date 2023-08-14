@@ -19,7 +19,7 @@
     "popper.js": "^1.14.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router": "^5.0.1",
+    "react-router": "^5.3.4",
     "reactify": "^1.1.1",
     "vinyl-source-stream": "^2.0.0"
   },
