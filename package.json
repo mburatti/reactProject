@@ -4,7 +4,7 @@
   "description": "This is a small Reactjs app",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^3.4.1",
+    "bootstrap": "^4.0.0",
     "bootstrap-theme": "^5.0.0",
     "browserify": "^16.5.2",
     "create-react-class": "^15.7.0",
