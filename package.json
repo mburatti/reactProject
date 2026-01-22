@@ -15,7 +15,7 @@
     "gulp-eslint": "^6.0.0",
     "gulp-open": "^3.0.1",
     "jquery": "^3.7.1",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "popper.js": "^1.16.1",
